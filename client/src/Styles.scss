@@ -1,0 +1,227 @@
+.app {
+    .container {
+
+        .home {
+            .posts {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 150px;
+            }
+
+            .post {
+                display: flex;
+                gap: 150px;
+
+                &:nth-child(2n+1) {
+                    flex-direction: row-reverse;
+                }
+                &:last-child{
+                    margin-bottom: 40px;
+                }
+
+                .img {
+                    flex: 2;
+
+                    img {
+                        width: 100%;
+                        max-height: 400px;
+                        object-fit: cover;
+                    }
+                }
+
+                .content {
+                    flex: 3;
+                }
+            }
+        }
+
+        .single {
+            display: flex;
+            gap: 50px;
+            width: 70vw;
+            text-align: center;
+            margin: auto;
+            justify-content: center;
+
+            .content {
+                flex: 5;
+                width: 100wv;
+                display: flex;
+                flex-direction: column;
+            }
+
+            img {
+                width: 50vw;
+                height: 300px;
+
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 14px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .menu {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                h1 {
+                    font-size: 20px;
+                    color: #555;
+                }
+
+                .post {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    img {
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        color: #555;
+
+                    }
+
+                    button {
+                        width: max-content;
+                        padding: 7.5px 15px;
+                        border: none;
+                        cursor: pointer;
+                        color: teal;
+                        background-color: white;
+                        border: 1px solid teal;
+
+                        &:hover {
+                            border: 1px solid white;
+                            background-color: dimgrey;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+            .edit {
+                display: flex;
+                gap: 5px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+
+                h1 {
+                    font-size: 42px;
+                    color: #333;
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+
+        .add {
+            padding: 40px;
+            margin: 10px;
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+
+
+            .content {
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    padding: 10px;
+                    border: 1px solid lightgray;
+
+                }
+            }
+
+            .editorText {
+                height: 300px;
+                overflow: scroll;
+                border: 1px solid gray;
+
+                .editor {
+                    height: 100%;
+                    border: none;
+                }
+            }
+
+            .menu {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .item {
+                    border: 1px solid lightblue;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: 14px;
+                    color: #555;
+
+                    .file {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        justify-content: space-between;
+
+                        :first-child {
+                            cursor: pointer;
+                            color: teal;
+                            background-color: whitesmoke;
+                            border: 1px solid teal;
+                            padding: 3px 5px;
+                        }
+
+                        :last-child {
+                            cursor: pointer;
+                            color: white;
+                            background-color: teal;
+                            border: 1px solid teal;
+                            padding: 3px 5px;
+                        }
+                    }
+
+                    .Cat {
+                        display: flex;
+                        align-items: center;
+                        gap: 2px;
+                        color: teal;
+                    }
+                }
+            }
+        }
+    }
+}
